@@ -53,3 +53,7 @@ _darcs
 /snippet
 
 configs/
+annotations/
+*.sh
+*.out
+*.err

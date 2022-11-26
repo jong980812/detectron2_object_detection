@@ -151,6 +151,7 @@ def main(args):
 
 
 if __name__ == "__main__":
+    os.environ['DETECTRON2_DATASETS']="/local_datasets/detectron2/"
     args = default_argument_parser().parse_args()
     print("Command Line Args:", args)
     launch(
