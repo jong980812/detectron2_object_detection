@@ -58,3 +58,6 @@ annotations/
 *.out
 *.err
 a.txt
+
+
+results/

@@ -183,7 +183,7 @@ def default_setup(cfg, args):
         cfg (CfgNode or omegaconf.DictConfig): the full config to be used
         args (argparse.NameSpace): the command line arguments to be logged
     """
-    output_dir = _try_get_key(cfg, "OUTPUT_DIR", "output_dir", "train.output_dir")
+    output_dir = "/data/jong980812/nia/detectron2/results/basketball"
     if comm.is_main_process() and output_dir:
         PathManager.mkdirs(output_dir)
 
