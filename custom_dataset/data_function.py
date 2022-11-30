@@ -54,6 +54,10 @@ def get_info(dataset_dicts, imgs_anns,image_id,img_dir):
     
     env=imgs_anns["labelinginfo_scene representation"]
     filename = os.path.join("/local_datasets/detectron2/basketball/annotations/images", imgs_anns["metaData"]["농구메타데이터"]+".jpg")
+    if not os.path.isfile(filename):
+        print(filename)
+        print("Not img file")
+        exit(0)
     record = {} # 하나의 json 파일에 들어있는 정보들 저장하기 위한 dictionary
     objs=[]
     record["file_name"]=filename
