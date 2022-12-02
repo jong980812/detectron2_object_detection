@@ -62,3 +62,8 @@ a.txt
 *.ipynb
 
 results/
+resume/events.out.tfevents.1669875999.sw10.232392.0
+resume/last_checkpoint
+.gitignore
+resume/events.out.tfevents.1669876116.sw10.235137.0
+resume/val_coco_format.json.lock
